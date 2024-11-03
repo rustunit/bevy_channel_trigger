@@ -1,6 +1,6 @@
 [package]
 name = "bevy_channel_trigger"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 authors = ["Rustunit <mail@rustunit.com>"]
 categories = ["game-development"]
@@ -9,6 +9,14 @@ keywords = ["gamedev", "bevy"]
 license = "MIT OR Apache-2.0"
 repository = "https://github.com/rustunit/bevy_channel_trigger"
 readme = "README.md"
+
+[lints]
+workspace = true
+
+[workspace.lints.clippy]
+unwrap_used = "deny"
+expect_used = "deny"
+panic = "deny"
 
 [dependencies]
 flume = { version = "0.11", default-features = false }
