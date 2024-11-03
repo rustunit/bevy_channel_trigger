@@ -1,6 +1,6 @@
 [package]
 name = "bevy_channel_trigger"
-version = "0.1.2"
+version = "0.1.3"
 edition = "2021"
 authors = ["Rustunit <mail@rustunit.com>"]
 categories = ["game-development"]
@@ -21,3 +21,6 @@ panic = "deny"
 [dependencies]
 flume = { version = "0.11", default-features = false }
 bevy = { version = "0.14", default-features = false }
+
+[dev-dependencies]
+bevy = "0.14"
