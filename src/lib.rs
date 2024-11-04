@@ -1,5 +1,5 @@
 use bevy::{ecs::event::Event, prelude::*};
-use flume::{Receiver, Sender, TryRecvError};
+use crossbeam_channel::{Receiver, Sender, TryRecvError};
 
 /// channel sender to share with multiple producers and offering a simple `send` function
 #[derive(Resource, Clone, Debug)]
@@ -28,7 +28,7 @@ pub trait ChannelTriggerApp {
 
 impl ChannelTriggerApp for App {
     fn add_channel_trigger<T: Event>(&mut self) -> ChannelSender<T> {
-        let (sender, receiver) = flume::unbounded();
+        let (sender, receiver) = crossbeam_channel::unbounded();
         self.insert_resource(EventReceiver::<T>(receiver));
         self.add_systems(PreUpdate, process_events::<T>);
         ChannelSender::<T>(sender)

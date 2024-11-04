@@ -1,6 +1,6 @@
 [package]
 name = "bevy_channel_trigger"
-version = "0.1.3"
+version = "0.2.0"
 edition = "2021"
 authors = ["Rustunit <mail@rustunit.com>"]
 categories = ["game-development"]
@@ -19,7 +19,7 @@ expect_used = "deny"
 panic = "deny"
 
 [dependencies]
-flume = { version = "0.11", default-features = false }
+crossbeam-channel = { version = "0.5", default-features = false }
 bevy = { version = "0.14", default-features = false }
 
 [dev-dependencies]

@@ -5,7 +5,7 @@
 [![docs.rs](https://docs.rs/bevy_channel_trigger/badge.svg)](https://docs.rs/bevy_channel_trigger)
 
 Send events via a channel from anywhere (eg. web-dom, c-ffi) to Bevy Observers. 
-Inspired by [bevy_crossbeam_event](https://github.com/johanhelsing/bevy_crossbeam_event) but using [flume](https://github.com/zesterer/flume) instead of `crossbeam` as the underlying efficient unbounded channel and delivering the events via Bevy Observers instead of `EventReader`. Furthermore we lint to be guaranteed panic free.
+Inspired by [bevy_crossbeam_event](https://github.com/johanhelsing/bevy_crossbeam_event) but delivering the events via Bevy Observers instead of `EventReader`.
 
 # example
 
