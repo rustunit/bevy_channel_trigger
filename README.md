@@ -7,6 +7,8 @@
 Send events via a channel from anywhere (eg. web-dom, c-ffi) to Bevy Observers. 
 Inspired by [bevy_crossbeam_event](https://github.com/johanhelsing/bevy_crossbeam_event) but delivering the events via Bevy Observers instead of `EventReader`.
 
+![schema](schema.png)
+
 # example
 
 ```rust
