@@ -29,6 +29,20 @@ jobs:
       - uses: extractions/setup-just@v1
       - name: Check
         run: just check
+  example:
+    name: Compile Example
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+      - name: Install dependencies
+        run: sudo apt-get update; sudo apt-get install --no-install-recommends libasound2-dev libudev-dev libwayland-dev libxkbcommon-dev
+      - uses: leafwing-studios/cargo-cache@v2
+        with:
+          sweep-cache: true
+      - uses: extractions/setup-just@v1
+      - name: Check
+        run: just examples
   test:
     name: Test
     strategy:
