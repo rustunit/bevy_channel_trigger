@@ -12,6 +12,9 @@ ci: check test doc format
 check:
     cargo clippy -- -Dwarnings
 
+examples:
+    cargo b --example simple
+
 test:
     cargo test
 

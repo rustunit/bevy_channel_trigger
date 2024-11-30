@@ -25,7 +25,7 @@ fn main() {
     });
 
     // register an observer to receive the events sent via `sender`
-    app.observe(on_event);
+    app.add_observer(on_event);
 
     app.run();
 }
