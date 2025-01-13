@@ -54,16 +54,17 @@ fn on_event(trigger: Trigger<MyEvent>) {
 
 ## Our Other Crates
 
-- [bevy_device_lang](https://github.com/rustunit/bevy_device_lang)
-- [bevy_ios_review](https://github.com/rustunit/bevy_ios_review)
-- [bevy_ios_impact](https://github.com/rustunit/bevy_ios_impact)
-- [bevy_ios_alerts](https://github.com/rustunit/bevy_ios_alerts)
-- [bevy_ios_iap](https://github.com/rustunit/bevy_ios_iap)
-- [bevy_ios_notifications](https://github.com/rustunit/bevy_ios_notifications)
-- [bevy_ios_gamecenter](https://github.com/rustunit/bevy_ios_gamecenter)
-- [bevy_web_popups](https://github.com/rustunit/bevy_web_popups)
-- [bevy_libgdx_asset](https://github.com/rustunit/bevy_libgdx_asset)
 - [bevy_debug_log](https://github.com/rustunit/bevy_debug_log)
+- [bevy_device_lang](https://github.com/rustunit/bevy_device_lang)
+- [bevy_web_popups](https://github.com/rustunit/bevy_web_popups)
+- [bevy_libgdx_atlas](https://github.com/rustunit/bevy_libgdx_atlas)
+- [bevy_ios_iap](https://github.com/rustunit/bevy_ios_iap)
+- [bevy_ios_review](https://github.com/rustunit/bevy_ios_review)
+- [bevy_ios_gamecenter](https://github.com/rustunit/bevy_ios_gamecenter)
+- [bevy_ios_alerts](https://github.com/rustunit/bevy_ios_alerts)
+- [bevy_ios_notifications](https://github.com/rustunit/bevy_ios_notifications)
+- [bevy_ios_impact](https://github.com/rustunit/bevy_ios_impact)
+- [bevy_ios_safearea](https://github.com/rustunit/bevy_ios_safearea)
 
 ## Compatible Bevy Versions
 
