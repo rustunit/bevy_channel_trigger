@@ -1,4 +1,6 @@
-use bevy::{ecs::event::Event, prelude::*};
+use bevy_app::prelude::*;
+use bevy_ecs::prelude::*;
+use bevy_log::prelude::*;
 use crossbeam_channel::{Receiver, Sender, TryRecvError};
 
 /// channel sender to share with multiple producers and offering a simple `send` function
