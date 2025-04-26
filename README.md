@@ -4,7 +4,7 @@
 [![crates.io](https://img.shields.io/crates/v/bevy_channel_trigger)](https://crates.io/crates/bevy_channel_trigger)
 [![docs.rs](https://docs.rs/bevy_channel_trigger/badge.svg)](https://docs.rs/bevy_channel_trigger)
 
-Send events via a channel from anywhere (eg. web-dom, c-ffi) to Bevy Observers. 
+Send events via a channel from anywhere (eg. web-dom, c-ffi) to Bevy Observers.
 Inspired by [bevy_crossbeam_event](https://github.com/johanhelsing/bevy_crossbeam_event) but delivering the events via Bevy Observers instead of `EventReader`.
 
 ![schema](schema.png)
@@ -48,7 +48,7 @@ fn on_event(trigger: Trigger<MyEvent>) {
 }
 ```
 
-# Other examples 
+# Other examples
 
 * [bevy_web_drop_image_as_sprite](https://github.com/rustunit/bevy_web_drop_image_as_sprite)
 
@@ -70,7 +70,8 @@ fn on_event(trigger: Trigger<MyEvent>) {
 
 |bevy|our version|
 |-|-|
-|0.15|0.3,main|
+|0.16|0.4,main|
+|0.15|0.3|
 |0.14|0.1,0.2|
 
 ## License
