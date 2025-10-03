@@ -70,7 +70,8 @@ fn on_event(trigger: Trigger<MyEvent>) {
 
 |bevy|our version|
 |-|-|
-|0.16|0.4,main|
+|0.17|0.5,main|
+|0.16|0.4|
 |0.15|0.3|
 |0.14|0.1,0.2|
 

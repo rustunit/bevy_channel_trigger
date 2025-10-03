@@ -31,7 +31,7 @@ fn main() {
 }
 
 // regular bevy observer to handle these events coming into the bevy world
-fn on_event(trigger: Trigger<MyEvent>) {
+fn on_event(trigger: On<MyEvent>) {
     let event = trigger.event();
     println!("trigger with: {}", event.0);
 }
