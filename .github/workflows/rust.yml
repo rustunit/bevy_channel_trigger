@@ -4,7 +4,7 @@ on:
   merge_group:
   pull_request:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -52,6 +52,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: dtolnay/rust-toolchain@stable
+        with:
+          components: clippy, rustfmt
       - name: Install linux dependencies
         if: matrix.os == 'ubuntu-latest'
         run: sudo apt-get update; sudo apt-get install --no-install-recommends libasound2-dev libudev-dev libwayland-dev libxkbcommon-dev
