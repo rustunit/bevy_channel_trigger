@@ -69,12 +69,13 @@ fn on_event(trigger: Trigger<MyEvent>) {
 ## Compatible Bevy Versions
 
 |bevy|our version|
-|-|-|
-|0.18|0.6,main|
-|0.17|0.5|
-|0.16|0.4|
-|0.15|0.3|
-|0.14|0.1,0.2|
+|----|-----------|
+|0.19|0.7,main   |
+|0.18|0.6        |
+|0.17|0.5        |
+|0.16|0.4        |
+|0.15|0.3        |
+|0.14|0.1,0.2    |
 
 ## License
 
