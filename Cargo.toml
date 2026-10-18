@@ -25,4 +25,4 @@ bevy_app = { version = "0.20", default-features = false }
 bevy_log = { version = "0.20", default-features = false }
 
 [dev-dependencies]
-bevy = "0.20"
+bevy = { version = "0.20", default-features = false }
