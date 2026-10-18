@@ -36,13 +36,13 @@ fn main() {
     });
 
     // register an observer to receive the events sent via `sender`
-    app.observe(on_event);
+    app.add_observer(on_event);
 
     app.run();
 }
 
 // regular bevy observer to handle these events coming into the bevy world
-fn on_event(trigger: Trigger<MyEvent>) {
+fn on_event(trigger: On<MyEvent>) {
     let event = trigger.event();
     println!("trigger with: {}", event.0);
 }
@@ -70,7 +70,8 @@ fn on_event(trigger: Trigger<MyEvent>) {
 
 |bevy|our version|
 |----|-----------|
-|0.19|0.7,main   |
+|0.20|0.8,main   |
+|0.19|0.7        |
 |0.18|0.6        |
 |0.17|0.5        |
 |0.16|0.4        |
